@@ -1,0 +1,208 @@
+body{
+     background-color: #f5d9d5;
+  
+   font-weight: 400;
+margin: 0;
+     font-family: 'Nunito', sans-serif;
+}
+
+/* a{
+     text-decoration: none;
+} */
+
+.navBar{
+     display: flex;
+     flex-direction: row;
+     text-transform: uppercase;
+     font-weight: 100;
+     padding-left: 24px ;
+     padding-top: 5px;
+     position: fixed;
+
+}
+
+.logo{
+     font-size: 1.5rem;
+     color: #EA1C2C;
+     padding: 5px 0 5px 0;
+     margin: 0 16px 0 0 ;
+     text-decoration: none;
+}
+
+.links{
+     padding: 8px;
+     font-size: 1.4rem;
+     color: #ffffff;
+     text-decoration: none;
+     transition: 1.5s;
+     
+}
+
+.links:hover{
+     text-decoration: underline overline 3px #EA1C2C;
+     /* text-decoration-color:  #EA1C2C; */
+     
+
+}
+
+.firstRow{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+.imgOne{
+     width: 100%;
+     height: 60vh;
+     background-image: url(imgs/hand2.png);
+     background-size: cover;  
+     background-position: center;  
+}
+.firstText{
+     display: none;
+}
+
+.secondRow .thirdRow .forthRow{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+h2{
+     padding-top: 2em;
+     text-align: center;
+     text-transform: uppercase;
+     color: #EA1C2C;
+     font-family: 'Nunito', sans-serif;
+     font-size: 1.5em;
+     font-weight: 300;
+
+}
+
+p{
+     line-height: 2.5em;
+     text-align: center;
+     color: #f498b8;
+     padding: 0 4em 2em 4em;
+}
+
+.imgTwo{
+     width: 100%;
+     height: 60vh;
+     background-image: url(imgs/milk.png);
+     background-size: cover;  
+     background-position: center;  
+}
+
+.imgThree{
+     width: 100%;
+     height: 60vh;
+     background-image: url(imgs/gumball.png);
+     background-size: cover;  
+     background-position: center;  
+}
+.imgFour{
+     width: 100%;
+     height: 60vh;
+     background-image: url(imgs/sprinkles.png);
+     background-size: cover;  
+     background-position: center;  
+}
+
+
+
+
+
+/* OVOA E ZA DESKTOP WEBSITE */
+
+@media (min-width: 990px) {
+     
+
+.firstRow{
+     display: grid;
+     grid-template-columns: 50% 50%;
+    
+    
+}
+.firstText{
+     display: inline;
+     width: 100%;
+     text-align: center;
+     text-transform: uppercase;
+     padding-top: 2em;
+     
+}
+
+h1{
+     font-weight: 200;
+     font-size: 3em;
+     font-family: 'Nunito', sans-serif;
+     letter-spacing: 2px;
+     color: white;
+}
+.line{
+     color: #EA1C2C;
+     
+}
+.imgOne{
+     width: 100%;
+     height: 100%;
+     background-image: url(imgs/hand2.png);
+     background-size: cover;    
+}
+
+.icon{
+     background-image: url(imgs/lolli_icon.png);
+     background-size: contain;
+     background-position: center;
+     width: 100%;
+     height: 120px;
+}
+
+}
+
+@media (min-width: 770px){
+
+
+
+.secondRow{
+     display: flex;
+     flex-direction: row-reverse;
+     align-items: center;
+}
+
+.thirdRow{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+}
+.forthRow{
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: center;
+     align-items: center;
+}
+
+.secondText{
+     width: 50%;
+}
+
+.imgTwo, .imgThree, .imgFour{
+     width: 50%;
+}
+
+h2{
+     padding-top: 0;
+}
+
+p{
+     padding: 0 5em 0 5em;
+}
+
+ 
+
+
+
+     }
